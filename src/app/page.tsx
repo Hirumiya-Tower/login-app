@@ -32,7 +32,7 @@ const LoginPage = () => {
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
             <div className="bg-white p-8 rounded-lg shadow-lg w-96">
-                <h1 className="text-2xl font-semibold text-center mb-6">ログインページ</h1>
+                <h1 className="text-2xl font-semibold text-center mb-6" style={{ color: '#333' }}>ログインページ</h1>
                 
                 <form onSubmit={handleLogin}>
                     <div className="mb-4">
@@ -43,6 +43,7 @@ const LoginPage = () => {
                             value={nickname}
                             onChange={(e) => setNickname(e.target.value)}
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                            style={{ fontSize: '16px' }}
                             required
                         />
                     </div>
@@ -55,6 +56,7 @@ const LoginPage = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                            style={{ fontSize: '16px' }}
                             required
                         />
                     </div>
