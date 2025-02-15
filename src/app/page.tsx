@@ -43,7 +43,7 @@ const LoginPage = () => {
                             value={nickname}
                             onChange={(e) => setNickname(e.target.value)}
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                            style={{ fontSize: '16px' }}
+                            style={{ fontSize: '16px', color: '#000', fontWeight: '500' }} // フォントの色と太さを変更
                             required
                         />
                     </div>
@@ -56,7 +56,7 @@ const LoginPage = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                            style={{ fontSize: '16px' }}
+                            style={{ fontSize: '16px', color: '#000', fontWeight: '500' }} // フォントの色と太さを変更
                             required
                         />
                     </div>
